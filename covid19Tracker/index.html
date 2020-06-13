@@ -230,11 +230,12 @@ margin: 1rem 0 .5rem;">
 
 
             d.data.regional.forEach(function(i) {
-
+                var x1 = i.totalConfirmed - i.deaths - i.discharged;
                 row = `  <tr>
        	      <td>${i.loc}</td>
        	      <td>${(i.totalConfirmed)}</td>
-       	      <td>${(i.deaths)}</td>
+               
+       	      <td>${(x1)}</td>
        	      <td>${(i.discharged)}</td>
               <td>${(i.deaths)}</td>
               </tr> `
